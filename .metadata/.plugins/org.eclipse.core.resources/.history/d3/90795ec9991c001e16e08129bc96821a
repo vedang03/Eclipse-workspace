@@ -1,0 +1,30 @@
+package passbyvalue;
+
+
+public class PassByValue {
+	int number;
+	
+	 void setNumber(int number) {
+		number = number;
+	}
+	
+	 int incrementNumberByTen() {
+		  number+=10;
+		  return number;
+	}
+
+
+
+	public static void main(String[] args) {
+	
+		PassByValue v1 = new PassByValue();
+		v1.setNumber(1);
+		
+		System.out.println(v1.incrementNumberByTen());
+		
+		
+
+	}
+	
+
+}

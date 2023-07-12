@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.security.auth.callback.ConfirmationCallback"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicTreeUI.TreeIncrementAction"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Color"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Circle"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Colour"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Border"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+</qualifiedTypeNameHistroy>

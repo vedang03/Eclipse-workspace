@@ -1,0 +1,21 @@
+package passbyvalue;
+
+public class IncrementByOne {
+
+	public static void main(String[] args) {
+		int[] numbers = {10,20,30,40};
+		incrementNumbersByOne(numbers);
+		
+		for(int x : numbers) {
+			System.out.println(x);
+		}
+
+	}
+	
+	private static void incrementNumbersByOne(int[] numbers) {
+		for(int i=0;i<numbers.length;i++) {
+			numbers[i]+=1;
+		}
+	}
+
+}
