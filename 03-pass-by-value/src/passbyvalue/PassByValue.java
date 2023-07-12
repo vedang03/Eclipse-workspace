@@ -3,8 +3,8 @@ package passbyvalue;
 
 public class PassByValue {
 	
-	private static void incrementNumberByTen(int number) {
-		number+=10;
+	private static int incrementNumberByTen(int number) {
+		return number+=10;
 	}
 
 

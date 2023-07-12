@@ -10,4 +10,7 @@
     <fullyQualifiedTypeName name="com.aurionpro.model.Colour"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Border"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="javax.swing.text.Highlighter.Highlight"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.AccountType"/>
 </qualifiedTypeNameHistroy>
