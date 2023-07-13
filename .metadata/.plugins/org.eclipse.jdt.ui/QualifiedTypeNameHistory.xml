@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="javax.swing.text.Highlighter.Highlight"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.AccountType"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

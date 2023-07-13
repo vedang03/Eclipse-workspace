@@ -5,13 +5,13 @@ import com.aurionpro.model.AccountType;
 
 public class AccountTest {
 
-	public static void main(String[] args, AccountType accountType) {
+	public static void main(String[] args) {
 		Account account = new Account(1,"Vedang",20000,AccountType.Savings);
 		
 		System.out.println(account);
 		deposit(2000, account);
 		System.out.println(account);
-		withdraw(25000,account,accountType);
+		withdraw(25000,account);
 		System.out.println(account);
 			
 
@@ -24,8 +24,8 @@ public class AccountTest {
 		}
 	}
 	
-	private static void withdraw(double amount , Account account , AccountType accountType) {
-		if(AccountType.Savings.equals(accountType)) {
+	private static void withdraw(double amount , Account account ) {
+		if(AccountType.Savings.equals(account.getAccountType())) {
 			if(account.getBalance()-amount>0) {
 				double balance = account.getBalance();
 				balance-=amount;

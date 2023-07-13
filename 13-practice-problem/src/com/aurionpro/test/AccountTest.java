@@ -95,7 +95,7 @@ public  class AccountTest {
 			Account temp = null;
 			
 			for(int i=0;i<account.length;i++) {
-				for(int j=i ; j<account.length;j++) {
+				for(int j=i+1 ; j<account.length;j++) {
 					if(account[i].getBalance()<account[j].getBalance()) {
 					temp=account[i];
 					account[i]=account[j];
