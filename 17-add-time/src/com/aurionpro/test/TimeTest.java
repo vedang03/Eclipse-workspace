@@ -5,9 +5,9 @@ import com.aurionpro.model.Time;
 public class TimeTest {
  public static void main(String[] args) {
 	Time t1 = new Time(16,32,47);
-	Time t2 = new Time(10,16,40);
+	Time t2 = new Time(100,16,40);
 	
-	addTime(t1,t2);
+	addTime(t1,t2);	
 	
 	System.out.println(t1);
 	
@@ -31,15 +31,15 @@ public class TimeTest {
 	  if(t1.getMinutes() + t2.getMinutes() > 60) {
 		  hrs+=1;
 		  
-		  
+		  	
 	  } else {
 		  mins = t1.getMinutes() + t2.getMinutes() + mins;
 	  }
 	  t1.setMinutes(mins);
 	  
 	  if(t1.getHours() + t2.getHours()>24) {
-		  hrs = t1.getHours() + t2.getHours() - 24;
-		  t1.setHours(hrs);
+		 
+		  t1.setHours((t1.getHours() + t2.getHours())%24);
 	  }else {
 	  hrs = t1.getHours() + t2.getHours();
 	  t1.setHours(hrs);}

@@ -12,6 +12,18 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="javax.swing.text.Highlighter.Highlight"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.AccountType"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.City"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.SalesPerson"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Time"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.AccountType"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Distance"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Game"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Parent"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Child"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Man"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Boy"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Kid"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Infant"/>
 </qualifiedTypeNameHistroy>
