@@ -45,9 +45,8 @@ public class MatrixMultiplication {
 	            {
 	                System.out.print(c[i][j] + " ");
 	            }
-	            System.out.println();
 	        }
-	        input.close();
+	      
 
 	}
 
