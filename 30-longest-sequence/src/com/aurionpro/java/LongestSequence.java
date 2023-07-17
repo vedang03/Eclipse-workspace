@@ -11,22 +11,24 @@ public class LongestSequence {
 
 		System.out.println("Enter a String: ");
 		input = sc.next();
-		int longestSequence = 0;
-		int sequence = 0;
+		char longestSequence = ' ';
+		int sequence = 1;
+		int maxCount = 0;
 		
-		for(int i=0;i<input.length();i++) {
-			sequence=0;
-			for(int j=i+1;j<input.length();j++) {
-				if(input.charAt(i)==input.charAt(j)) {
-					sequence++;
-				}
-				if(sequence > longestSequence) {
-					longestSequence=sequence;
-				}
+		for(int i=0;i<input.length()-1;i++) {
+			char first = input.charAt(i);
+			if(first == input.charAt(i+1)) {
+			sequence++;
+			if(sequence>maxCount) {
+				longestSequence=first;
+				maxCount=sequence;
 			}
-			
+			}
+			else {
+				sequence=1;
+			}
 		}
-		System.out.println(longestSequence);
+		System.out.println("Longest sequence is: "+longestSequence + " its count is: "+maxCount);
 
 	}
 }
