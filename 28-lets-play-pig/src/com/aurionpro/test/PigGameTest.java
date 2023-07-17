@@ -17,6 +17,7 @@ public class PigGameTest {
 		int toscore=0;
 		
 		while(p1.getTotalScore()<20) {
+			tuscore=0;
 			System.out.println("Turn: "+turn);
 		do {
 		
@@ -33,6 +34,7 @@ public class PigGameTest {
 			}else {
 			tuscore+=p1.getDiceScore();
 			System.out.println("Dice Score: "+p1.getDiceScore());
+		
 			}
 				
 		}else {
