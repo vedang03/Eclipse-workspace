@@ -39,6 +39,13 @@ public class Customers {
 	public void setPassword(int password) {
 		this.password = password;
 	}
+	@Override
+	public String toString() {
+		return "Customers [customerID=" + customerID + ", name=" + name + ", email=" + email + ", password=" + password
+				+ "]";
+	}
+	
+	
 	
 	
 }
