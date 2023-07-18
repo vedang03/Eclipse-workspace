@@ -20,7 +20,7 @@ public  class Professor extends Person implements SalariedEmployee  {
 	}
 	@Override
 	public String toString() {
-		return "Professor [id="+getId()+ ", Address= "+getAddress() + " , dateofbirth: "+getDob() + "salary= " + salary + "]";
+		return "Professor [id="+getId()+ ", Address= "+getAddress() + " , dateofbirth: "+getDob() + " salary= " + salary + "]";
 	}
 		
 
