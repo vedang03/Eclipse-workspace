@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="javax.security.auth.callback.ConfirmationCallback"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicTreeUI.TreeIncrementAction"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.Color"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.Circle"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.Colour"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Border"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="javax.swing.text.Highlighter.Highlight"/>
@@ -21,12 +13,9 @@
     <fullyQualifiedTypeName name="com.aurionpro.model.Parent"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Child"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.Man"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.Boy"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Kid"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Infant"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.PigGame"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.SavingAccount"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.CurrentAccount"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
@@ -40,10 +29,35 @@
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Customers"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="com.aurionpro.model.Person"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.Professor"/>
     <fullyQualifiedTypeName name="com.aurionpro.model.SalariedEmployee"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Person"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.IResources"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Dog"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Man"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Boy"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.IMannerable"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.IEmotionable"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Car"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Bike"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Bus"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.IMovable"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Vehicle"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.aurionpro.util.AgeUtil"/>
+    <fullyQualifiedTypeName name="com.aurionpro.util.InValidAgeException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.aurionpro.exception.ExceptionChecked"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.Player"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.aurionpro.model.ClassifyPlayers"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
