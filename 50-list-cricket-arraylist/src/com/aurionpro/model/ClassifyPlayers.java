@@ -29,7 +29,7 @@ public class ClassifyPlayers {
 		ArrayList<Player>temp = new ArrayList<>();
 		for(Player p : players) {
 			if(p.getMatches()<50 && (p.getRuns()<50 || p.getWickets()<75)) {
-				temp.add(p);
+				temp.add(p);	
 			}
 		}
 		return temp;
