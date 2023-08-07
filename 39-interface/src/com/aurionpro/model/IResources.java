@@ -14,7 +14,7 @@ public interface IResources {
 		System.out.println("Person is working");
 	}
 	
-	int number = 22;
+	int number = 22;	
 	
 
 }
