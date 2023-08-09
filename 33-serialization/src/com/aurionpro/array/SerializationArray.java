@@ -1,4 +1,4 @@
-package com.aurionpro.array;
+	package com.aurionpro.array;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
@@ -12,7 +12,7 @@ public class SerializationArray {
 		};
 		
 		try {
-			FileOutputStream file = new FileOutputStream("C:\\Users\\vedang.badawe\\Documents\\text.txt");
+			FileOutputStream file = new FileOutputStream("C:\\Users\\vedang.badawe\\Documents\\text.bin");
 			ObjectOutputStream out = new ObjectOutputStream(file);
 			
 			out.writeObject(account);

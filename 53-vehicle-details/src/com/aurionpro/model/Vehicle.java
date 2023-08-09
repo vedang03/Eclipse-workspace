@@ -1,4 +1,4 @@
-package com.aurionpro.model;
+	package com.aurionpro.model;
 
 public class Vehicle {
 	String companyName;

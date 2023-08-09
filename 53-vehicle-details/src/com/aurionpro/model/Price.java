@@ -1,4 +1,4 @@
-package com.aurionpro.model;
+	package com.aurionpro.model;
 
 public class Price extends Milege {
 	double price;
