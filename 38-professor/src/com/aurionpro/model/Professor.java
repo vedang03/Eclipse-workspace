@@ -11,6 +11,18 @@ public  class Professor extends Person implements SalariedEmployee  {
 		this.salary = salary;
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	public double getSalary() {
+		return salary;
+	}
+
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+
 	@Override
 	public  double calculateSalary(double salary) {
 		

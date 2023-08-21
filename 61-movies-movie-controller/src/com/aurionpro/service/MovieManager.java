@@ -12,57 +12,73 @@ import java.util.List;
 import com.aurionpro.model.Movie;
 
 public class MovieManager {
-	
-	List<Movie>movies;
+
+	List<Movie> movies;
 	static final String filePath = "C:\\Users\\vedang.badawe\\Documents\\training\\61-movies-movie-controller\\data.bin";
-	
+
 	public MovieManager() {
-		movies	= new ArrayList<>();
+		movies = new ArrayList<>();
 		loadMovies();
 	}
-	
-	public void addMovie(Movie movie) {
-		movies.add(movie);
 
-		saveMovies();
-	}
-	
-	public void clearMovies() {
+	public void addMovie(Movie movie) {
+		boolean isIdExist = false;
 		
+		for(Movie x: movies) {
+			if(x.getId() == movie.getId()) {
+			  isIdExist = true;
+			}
+		}
+		if(isIdExist) {
+			System.out.println("Id must be unique");
+		}else {
+		movies.add(movie);
+		saveMovies();
+		}
+	}
+
+	public void clearMovies() {
+
 		movies.clear();
 		System.out.println();
 		saveMovies();
 	}
-	
+
 	public List<Movie> getMovies() {
-		
+
 		return movies;
 	}
-	
-	public Movie getMovieById(int id) {
-		loadMovies();
-//		System.out.println("outside");
-		for(Movie x: movies) {
-			System.out.println("dcd");
-			if(x.getId() == id) {
-				
-				return x;
+
+	public void getMovieById(int id) {
+		for (Movie m : movies) {
+			if (m.getId() == id) {
+				System.out.println(m.getName());
 			}
 		}
-		return null;
+		saveMovies();
+
 	}
 	
-	
+	public void deleteMoviesById(int id) {
+		Movie temp = null;
+		for(Movie m : movies) {
+			if(m.getId()==id) {
+				temp = m;
+			}
+		}
+		movies.remove(temp);
+		saveMovies();
+	}
 
 	private void loadMovies() {
 		try {
 			FileInputStream file = new FileInputStream(filePath);
 			ObjectInputStream in = new ObjectInputStream(file);
-			
-			movies = (List<Movie>)in.readObject();
+
+			movies = (List<Movie>) in.readObject();
 			in.close();
 			file.close();
-			
+
 //			for(Movie x : movies) {
 //				System.out.println(x);
 //			}
@@ -73,10 +89,9 @@ public class MovieManager {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		
-		
+
 	}
-	
+
 	private void saveMovies() {
 		try {
 			FileOutputStream file = new FileOutputStream(filePath);
@@ -91,9 +106,5 @@ public class MovieManager {
 			e.printStackTrace();
 		}
 	}
-	
 
-	
-	
-	
 }

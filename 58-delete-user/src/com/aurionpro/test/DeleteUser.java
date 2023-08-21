@@ -17,6 +17,9 @@ public class DeleteUser {
      freq.put(1, "Vedang");
      freq.put(2, "Tanish");
      freq.put(3, "Aashish");
+     freq.put(2, "Tom");
+     
+     System.out.println(freq);
      
      String userInput = sc.next();
      int k = 0;

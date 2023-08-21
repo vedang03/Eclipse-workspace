@@ -36,9 +36,18 @@ public class MovieController {
 			Scanner sc1 = new Scanner(System.in);
 		    int uid = sc1.nextInt();
 			manager.getMovieById(uid);
+			break;
+		
+		case 5:
+			Scanner sc2 = new Scanner(System.in);
+			int idToBeDeleted = sc2.nextInt();
+			manager.deleteMoviesById(idToBeDeleted);
+			break;
 		
 
 		default:
+			System.out.println("Invalid Option");
+		
 			break;
 		}
 	}

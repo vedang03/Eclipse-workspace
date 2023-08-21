@@ -11,6 +11,7 @@ public class PersonTest {
      
       Professor p = new Professor(2,"Thane",LocalDate.of(1999,04,14),50000);
       System.out.println(p);
+     System.out.println( p.calculateSalary(p.getSalary()));
 	}
 
 }

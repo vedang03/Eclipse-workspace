@@ -1,4 +1,4 @@
-package com.aurionpro.test;
+			package com.aurionpro.test;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -25,6 +25,7 @@ public class CountryTest {
 			if (arr.length == 3) {
 				String countryId = arr[0].replaceAll("\"", "");
 				String name = arr[1].replaceAll("\"", "");
+				
 				int code = Integer.parseInt(arr[2].trim());
 
 				m1.put(countryId, new Country(code, name));
@@ -32,22 +33,18 @@ public class CountryTest {
 
 			line = br.readLine();
 		}
-		Scanner sc = new Scanner(System.in);
-		String userInput = sc.next();
+//		Scanner sc = new Scanner(System.in);
+//		int userInput = sc.nextInt();
 
-		for (Map.Entry<String, Country> entry : m1.entrySet()) {
-			if (entry.getKey().equalsIgnoreCase(userInput)) {
-				System.out.println(entry.getValue());
-			}
-		}
-		
-//		for(Map.Entry<String,Country>entry:m1.entrySet()) {
-//			if(entry.getValue().getCountryCode()==userInput) {
-//				System.out.println(entry.getKey()+" - "+entry.getValue().getCountryName());
-//				
-//				
+//		for (Map.Entry<String, Country> entry : m1.entrySet()) {
+//			if (entry.getKey().equalsIgnoreCase(userInput)) {
+//				System.out.println(entry.getValue());
 //			}
 //		}
+		
+		for(Map.Entry<String,Country>entry:m1.entrySet()) {
+			System.out.println(entry);
+		}
 		
 		File file2 = new File("C:\\Users\\vedang.badawe\\Documents\\regionDetails.txt");
 		BufferedReader br2 = new BufferedReader(new FileReader(file2));

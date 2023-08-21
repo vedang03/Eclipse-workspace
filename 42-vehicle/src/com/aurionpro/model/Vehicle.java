@@ -28,6 +28,12 @@ public abstract class Vehicle {
 		this.dom = dom;
 	}
 	
+	
+	
+
+	public Vehicle() {
+		super();
+	}
 
 	@Override
 	public String toString() {

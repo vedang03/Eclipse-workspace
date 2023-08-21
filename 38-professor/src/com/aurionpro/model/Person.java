@@ -14,7 +14,6 @@ public  abstract class Person {
 		this.dob = dob;
 	}
 	public Person(int id2, String address2, LocalDate dob2, double salary) {
-		// TODO Auto-generated constructor stub
 	}
 	public int getId() {
 		return id;
