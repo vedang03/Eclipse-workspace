@@ -7,9 +7,12 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.aurionpro.model.Employee;
 
@@ -20,12 +23,14 @@ public class EmployeeTest {
 		BufferedReader br = new BufferedReader(new FileReader(file));
 
 		String line = br.readLine();
-		
+
 		System.out.println("1.Find all employees in a department");
 		System.out.println("2.Find count of employees in each department");
 		System.out.println("3.Find the immediate manager of the employee");
 		System.out.println("4.Find sum of salaries of all employees in a department");
 		System.out.println("5.Find highest paid employee on each role");
+		System.out.println("6.Find salesman with highest commission");
+		System.out.println("7.Find sum of salary of all employees");
 		System.out.println("What you want to do?");
 
 		Scanner sc = new Scanner(System.in);
@@ -153,7 +158,7 @@ public class EmployeeTest {
 				}
 			}
 			int sum = employees.stream().mapToInt(Double::intValue).sum();
-			System.out.println("Sum of all employees in: " + sum);
+			System.out.println("Sum of all employees is: " + sum);
 			break;
 //--------------------------------------------------------------------------------------------------------
 		case 5:
@@ -192,8 +197,82 @@ public class EmployeeTest {
 				}
 			}
 			break;
+//---------------------------------------------------------------------------------------------------------------------
+//			Find salesman with highest commission
+		case 6:
+			Map<String, Employee> m6 = new HashMap<>();
+
+			while (line != null) {
+				String[] arr = line.split(",");
+				if (arr.length == 8) {
+					String ecommision = arr[6];
+					String dep = arr[2].replaceAll("'", "");
+					String ename = arr[1].replaceAll("'", "");
+					double salary = Double.parseDouble(arr[5]);
+
+					m6.put(ename, new Employee(dep, salary, ecommision));
+
+				}
+
+				line = br.readLine();
+			}
+			List<String> commision = new ArrayList<>();
+			for (Map.Entry<String, Employee> entry : m6.entrySet()) {
+				if (entry.getValue().getEmployeeDepartment().equalsIgnoreCase("Salesman")) {
+					commision.add(entry.getValue().getEmployeeCommision());
+
+				}
+			}
+			List<Integer> commisioni = commision.stream().map(Integer::parseInt).collect(Collectors.toList());
+			int com = Collections.max(commisioni);
+			String coms = Integer.toString(com);
+			for (Map.Entry<String, Employee> entry : m6.entrySet()) {
+				if (entry.getValue().getEmployeeCommision().equalsIgnoreCase(coms)) {
+					System.out.println("Salesman with highest commision of " + entry.getValue().getEmployeeCommision()
+							+ " is " + entry.getKey());
+				}
+			}
+
+			break;
+//---------------------------------------------------------------------------------------------------------------
+//			Find sum of salary of all employees
+		case 7:
+			List<Employee> sal = new ArrayList<>();
+			while (line != null) {
+				String[] arr = line.split(",");
+				if (arr.length == 8) {
+					int employeeId = Integer.parseInt(arr[0]);
+					double salary = Double.parseDouble(arr[5]);
+					sal.add(new Employee(salary, employeeId));
+
+				}
+
+				line = br.readLine();
+			}
+			HashSet<Integer> set = new HashSet<>();
+			for (Employee x : sal) {
+				set.add(x.getEmployeeid());
+			}
+
+			Map<Integer, Employee> m8 = new HashMap<>();
+			for (Employee x : sal) {
+				if (set.contains(x.getEmployeeid())) {
+					m8.put(x.getEmployeeid(), new Employee(x.getEmployeeSalary()));
+				}
+			}
+
+			int total = 0;
+			for (Map.Entry<Integer, Employee> entry : m8.entrySet()) {
+				total += entry.getValue().getEmployeeSalary();
+			}
+			System.out.println("Sum of salaries of all employees is: " + total);
+
+			break;
+
+//-------------------------------------------------------------------------------------------------------------
 
 		default:
+			System.out.println("Invalid option");
 			break;
 		}
 
