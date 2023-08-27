@@ -20,7 +20,7 @@ public class TableTest3 {
 		// Manually creates 10 threads using for loop.
 //		for(int i=0;i<10;i++) {
 //			String name = "Thread: " + i;
-//			Thread temp = new Thread(task,name);
+//			Thread temp = fef Thread(task,name);
 //			temp.start();
 //		}
 		
